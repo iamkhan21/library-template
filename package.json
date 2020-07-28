@@ -6,7 +6,8 @@
     "build": "del /q pkg && pika build",
     "release": "pika publish",
     "version": "yarn build",
-    "test": "mocha"
+    "test": "mocha",
+    "update:deps": "yarn && yarn upgrade-interactive --latest && yarn upgrade"
   },
   "keywords": [],
   "license": "MIT",
@@ -46,15 +47,15 @@
     ]
   },
   "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.7.4",
-    "@babel/plugin-proposal-export-default-from": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-export-default-from": "^7.10.4",
     "@pika/pack": "^0.5.0",
-    "@pika/plugin-build-web": "^0.3.4",
-    "@pika/plugin-bundle-web": "^0.3.4",
-    "@pika/plugin-standard-pkg": "^0.3.4",
-    "@pika/types": "^0.3.4",
-    "mocha": "^6.2.2",
+    "@pika/plugin-build-web": "^0.9.2",
+    "@pika/plugin-bundle-web": "^0.9.2",
+    "@pika/plugin-standard-pkg": "^0.9.2",
+    "@pika/types": "^0.9.2",
+    "mocha": "^8.0.1",
     "pika-plugin-minify": "^0.1.0",
-    "pika-plugin-package.json": "^1.0.1"
+    "pika-plugin-package.json": "^1.0.2"
   }
 }
